@@ -3,7 +3,7 @@ import os
 import io
 from io import StringIO
 
-r_file = io.open('/media/sf_Desktop/Chegg_RF/Data/chegg2018.txt', mode = 'r', buffering=-1, encoding=None, errors=None, closefd=True)
+r_file = io.open('file.txt', mode = 'r', buffering=-1, encoding=None, errors=None, closefd=True)
 w_file = io.open('md5.txt', 'a')
 m_1=[]
 for line in r_file:
