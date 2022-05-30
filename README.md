@@ -1,13 +1,13 @@
 # Hash Cleaner and Iterator
 This Python Script has three modes...
 
-#cleaner.py : 
-#Cleaner Mode: 
+
+## Cleaner Mode: 
 For r_file put in the database file location, for w_file put the directory and file you want to write, this will extract the hash byitself, or also with email with corresponding hash in database file.[SUPPORTS MD5 ANND SHA1 FOR NOW]
 (Will update for other hashes choices and salts.)
-#Iterator mode: 
+## Iterator mode: 
 will cross reference two files... one with [HASH:EMAIL] and the other would be [HASH:PASSWORD] to result [EMAIL:PASSWORD] 
-#Wordlist mode:
+## Wordlist mode:
 the final mode will take the [Email:Pass] file and separate it into two files of your choice.
 
 #TIPS:
