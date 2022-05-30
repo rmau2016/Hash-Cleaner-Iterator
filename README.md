@@ -1,4 +1,4 @@
-# MD5-Extractor
+# Hash Cleaner and Iterator
 This Python Script will extract all Md5 hashes or SHA1 hashes in a file of choice and the emails with the corresponding hash.
 
 Examine.py : For r_file put in the database file location, for w_file put the directory and file you want to append.
