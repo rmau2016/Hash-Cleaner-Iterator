@@ -18,6 +18,6 @@ FOURTH: Use an iteration python script to check the hashes against both files to
 
 IT GENERALLY LOOKS LIKE THIS IN ITERATION MODE:
 
-'''First File: [HASH:EMAIL]
+```First File: [HASH:EMAIL]
 Second File: [HASH:PASS]
-We want [EMAIL:PASS]! So we write to a third file...'''
+We want [EMAIL:PASS]! So we write to a third file...```
