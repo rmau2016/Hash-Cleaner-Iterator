@@ -1,8 +1,8 @@
 # Hash Cleaner and Iterator
-This Python Script will extract all Md5 hashes or SHA1 hashes in a file of choice and the emails with the corresponding hash.
+This Python Script has three modes...
 
-cleaner.py : Cleaner Mode: For r_file put in the database file location, for w_file put the directory and file you want to write.
-Will update for other hashes choices and salts.
+cleaner.py : Cleaner Mode: For r_file put in the database file location, for w_file put the directory and file you want to write, this will extract the hash byitself, or also with email with corresponding hash in database file.
+(Will update for other hashes choices and salts.)
 Iterator mode will cross reference two files... one with [HASH:EMAIL] and the other would be [HASH:PASSWORD] to result [EMAIL:PASSWORD] 
 Wordlist mode, the final mode will take the [Email:Pass] file and separate it into two files of your choice.
 
