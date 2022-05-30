@@ -10,7 +10,7 @@ answer = '6'
 
 if mode == '1':
     answer = input("<0> for md5 and email" + "\n" +
-                   "<1> for Sha1 (or with salt) and email" + "\n" + "<2> for SHA-1 Only (Or with Salt)" + "\n"  "<3> for MD5 Only" + "\n" + "<4> to coloniate sha1 and salt after extraction" + "\n" +"<5> Make Separate User and Password List with one file [EMAIL:PASSWORD]" +"\n" ">>>>")
+                   "<1> for Sha1 (or with salt) and email" + "\n" + "<2> for SHA-1 Only (Or with Salt)" + "\n"  "<3> for MD5 Only" + "\n" + "<4> to coloniate sha1 and salt after extraction" +"\n" ">>>>")
     r_file = input("What file do you want to read?(Without .txt)")
     r_file += ".txt"
     w_file = input("What file do you want to write?(Without .txt)")
