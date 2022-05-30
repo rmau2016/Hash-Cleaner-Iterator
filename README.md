@@ -7,7 +7,7 @@ Iterator mode will cross reference two files... one with [HASH:EMAIL] and the ot
 Wordlist mode, the final mode will take the [Email:Pass] file and separate it into two files of your choice.
 
 TIPS-------
-FIRST: Use "paste" command to combine files Horizontally
+FIRST: Use "paste" command to combine files Horizontally \n
 Second: Combine hash and email types because they are predictable to get (hash:email) using paste command.
 THIRD: Delete all remaining spaces... using cat file.txt | tr -d "[:blank:]"
 FOURTH: Now you will have two files, one is the hashcat potfile [HASH:PASS], the other is [HASH:EMAIL]
