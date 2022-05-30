@@ -8,10 +8,9 @@ Wordlist mode, the final mode will take the [Email:Pass] file and separate it in
 
 TIPS-------
 FIRST: Use "paste" command to combine files Horizontally if you have to, use "Emeditor" too to clean the files, for instance the [HASH:EMAIL] option in the cleaner will output HASH['EMAIL'], just replace [' with : and '] with nothing in an text editor.
-Second: Combine hash and email types because they are predictable to get (hash:email) using paste command.
-THIRD: Delete all remaining spaces... using cat file.txt | tr -d "[:blank:]"
-FOURTH: Now you will have two files, one is the hashcat potfile [HASH:PASS], the other is [HASH:EMAIL]
-FIFTH: Use an iteration python script to check the hashes against both files to combine email with password.
+SECOND: Delete all remaining spaces... using cat file.txt | tr -d "[:blank:]"
+THIRD: Now you will have two files, one is the hashcat potfile [HASH:PASS], the other is [HASH:EMAIL]
+FOURTH: Use an iteration python script to check the hashes against both files to combine email with password.
 ---------
 IT GENERALLY LOOKS LIKE THIS IN ITERATION MODE:
 
