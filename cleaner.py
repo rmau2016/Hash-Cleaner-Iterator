@@ -5,12 +5,12 @@ from io import StringIO
 
 
 m_1 = []
-mode = input("DO YOU WANT CLEANING MODE(1) OR ITERATOR MODE?(2)\n")
+mode = input("DO YOU WANT CLEANING MODE(1) OR ITERATOR MODE?(2) OR [EMAIL:PASS] WORDLIST MODE(3)?\n")
 answer = '6'
 
 if mode == '1':
     answer = input("<0> for md5 and email" + "\n" +
-                   "<1> for Sha1 (or with salt) and email" + "\n" + "<2> for SHA-1 Only (Or with Salt)" + "\n"  "<3> for MD5 Only" + "\n" + "<4> to coloniate sha1 and salt after extraction" + "\n" + ">>>>")
+                   "<1> for Sha1 (or with salt) and email" + "\n" + "<2> for SHA-1 Only (Or with Salt)" + "\n"  "<3> for MD5 Only" + "\n" + "<4> to coloniate sha1 and salt after extraction" + "\n" +"<5> Make Separate User and Password List with one file [EMAIL:PASSWORD]" +"\n" ">>>>")
     r_file = input("What file do you want to read?(Without .txt)")
     r_file += ".txt"
     w_file = input("What file do you want to write?(Without .txt)")
@@ -53,6 +53,7 @@ if answer == '4':
         w_file2.writelines(':'.join(line[i:i+41]
                            for i in range(0, len(line), 40)))
 
+
 if mode == '2':
     hashcat = input(
         "What's the hash file or the pot file? [HASH:PASSWORD]?(Without .txt)\n")
@@ -75,6 +76,22 @@ if mode == '2':
         	z = z.split(":")
         	if m[0].lower().strip() == z[0].lower().strip():
             		file_out.write(m[1] + ":" + z[1])
+if mode == '3':
+	r_file2=input("What is the Email:Pass File?(Without .txt)")
+	r_file2 += ".txt"
+	r_file2 = open(r_file2, 'r')
+	w_file2 = input("What File do you want to save emails?(Without .txt)")
+	w_file2 += ".txt"
+	w_file3 = input("What File do you want to save passwords?(Without .txt)")
+	w_file3 += ".txt"
+	w_file2 = open(w_file2, 'w')
+	w_file3 = open(w_file3, 'w')
+	for line in r_file2:
+    		newest = line.split(":")
+    		User = line.split(":")[0]
+    		Password = line.split(":")[1]
+    		w_file2.write(User + "\n")
+    		w_file3.write(Password + "\n")
 
 r_file2.close()
 w_file2.close()
