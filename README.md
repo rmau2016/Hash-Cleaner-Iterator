@@ -10,7 +10,7 @@ will cross reference two files... one with [HASH:EMAIL] and the other would be [
 ## Wordlist mode:
 the final mode will take the [Email:Pass] file and separate it into two files of your choice.
 
-#TIPS:
+## TIPS:
 FIRST: Use "paste" command to combine files Horizontally if you have to, use "Emeditor" too to clean the files, for instance the [HASH:EMAIL] option in the cleaner will output HASH['EMAIL'], just replace [' with : and '] with nothing in an text editor.
 SECOND: Delete all remaining spaces... using cat file.txt | tr -d "[:blank:]"
 THIRD: Now you will have two files, one is the hashcat potfile [HASH:PASS], the other is [HASH:EMAIL]
@@ -18,6 +18,6 @@ FOURTH: Use an iteration python script to check the hashes against both files to
 
 IT GENERALLY LOOKS LIKE THIS IN ITERATION MODE:
 
-First File: [HASH:EMAIL]
+'''First File: [HASH:EMAIL]
 Second File: [HASH:PASS]
-We want [EMAIL:PASS]! So we write to a third file...
+We want [EMAIL:PASS]! So we write to a third file...'''
