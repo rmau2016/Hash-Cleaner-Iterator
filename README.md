@@ -26,4 +26,3 @@ First File: [HASH:EMAIL]
 Second File: [HASH:PASS]
 We want [EMAIL:PASS]! So we write to a third file...
 ```
-**I'm utilizing Jupityr notebook with markdown language**
